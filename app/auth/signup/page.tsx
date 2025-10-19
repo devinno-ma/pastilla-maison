@@ -21,8 +21,8 @@ export default function SignupPage() {
   const router = useRouter()
 
   const supabase = createBrowserClient(
-    process.env.SUPABASE_NEXT_PUBLIC_SUPABASE_URL!,
-    proSUPABASE_NEXT_PUBLIC_SUPABASE_ANON_KEY_ANON_KEY!,
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_NEXT_PUBLIC_SUPABASE_ANON_KEY!,
   )
 
   const handleSignup = async (e: React.FormEvent) => {
